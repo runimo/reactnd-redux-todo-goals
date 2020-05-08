@@ -24,6 +24,6 @@ class App extends React.Component {
   }
 }
 
-export default connect((state) => {
-state.loading
-})(App)
+export default connect((state) => ({
+  loading: state.loading
+}))(App)
